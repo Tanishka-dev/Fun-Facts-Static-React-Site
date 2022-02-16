@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(to left top, #00b7ff, #ffffc7);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.nav-img {
+  border-radius: 50%;
+  box-shadow: 10px 10px 5px #39546c;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5%;
+  justify-content: space-around;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  margin-right: 5%;
+}
+
+.heading {
+  color: #39546c;
+  font-size: 4rem;
+  text-shadow: 2px 2px;
+}
+
+.list > li {
+  color: #797289;
+  font-size: 1.5rem;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: #5a748c;
+  text-align: center;
+}
+
+.toggler {
+  display: flex;
+  align-items: center;
+}
+
+.toggler p {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.toggler--slider {
+  width: 30px;
+  height: 20px;
+  background-color: #2b283a;
+  border-radius: 2rem;
+  margin-inline: 7px;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid black;
+  box-sizing: content-box;
+}
+
+nav.dark .toggler--slider {
+  border-color: white;
+  background-color: #f5f5f5;
+}
+
+.toggler--slider--circle {
+  height: 13px;
+  width: 13px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+nav.dark .toggler--slider--circle {
+  background-color: black;
+}
+
+.toggler--light {
+  color: #2b283a;
+}
+
+nav.dark .toggler--light {
+  color: white;
+}
+
+.toggler--dark {
+  color: white;
+}
+
+nav.dark .toggler-dark {
+  color: #ffffff;
+}
+
+nav.dark .toggler--slider {
+  justify-content: flex-end;
+}
+
+nav.dark {
+  background: linear-gradient(90deg, #1a0841, #4f9da6);
+}
+
+main.dark {
+  background: linear-gradient(90deg, #1a0841, #4f9da6);
+  color: white;
+}
+
+footer.dark {
+  background: linear-gradient(90deg, #1a0841, #4f9da6);
+  color: white;
+}
